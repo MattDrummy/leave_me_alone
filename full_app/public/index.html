@@ -2,18 +2,28 @@
 <html lang="en">
   <head>
     <title>Leave Me Alone</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel='stylesheet' href='/stylesheets/style.css'/>
   </head>
   <body>
-    <h1>Leave Me Alone</h1>
-    <p>Welcome to Leave Me Alone</p>
-    <p>The purpose of which is to make your friends on facebook leave you alone for a few days.</p>
-    <p>Just click the button to generate a random quote for facebook, or you can create your own.</p>
-    <button type="button" name="button">Tell my friends to leave me alone!</button>
-    <form>
-      <input type="text" name="" value="" placeholder="Some sappy quote">
-      <input type="submit" name="submit" value="submit">
-    </form>
+    <section class="page-header">
+      <h1>Leave Me Alone</h1>
+      <p>Welcome to Leave Me Alone</p>
+      <p>The purpose of which is to make your friends on facebook leave you alone for a few days.</p>
+      <p>Just click the button to generate a random quote for facebook, or you can create your own.</p>
+    </section>
+    <section class="panel panel-default">
+      <label for="days">How Many Days Do You Want To Be Left Alone For ?</label>
+      <input id="days" type="number" name="days" value="1">
+    </section>
+    <section class="panel panel-default">
+      <button class="btn btn-default" id="postIt"type="button" name="button">Tell my friends to leave me alone!</button>
+    </section>
+    <section class="panel panel-default">
+      <label for="newQuote">Enter a quote to user for future posts here</label>
+      <input id="theQuote" type="text" name="newQuote" value="" placeholder="Random EMO FAN GIRL DEPRESSING SAPPY LEAVE ME ALONE Fan Quote">
+    </section>
+    <button id="submitIt" type="button" name="button">Submit</button>
   </body>
   <script
   src="https://code.jquery.com/jquery-3.2.1.js"
